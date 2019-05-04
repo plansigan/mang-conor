@@ -1,5 +1,7 @@
 const express = require('express')
 const consola = require('consola')
+const Discord = require('discord.js')
+const client = new Discord.Client()
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 
@@ -26,6 +28,10 @@ async function start() {
 
   // Give nuxt middleware to express
   app.use(nuxt.render)
+
+  client.on('ready', () => {
+      console.log("Connected as " + client.user.tag)
+  })
 
   // Listen the server
   app.listen(port, host)
