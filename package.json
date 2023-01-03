@@ -18,7 +18,7 @@
     "cross-env": "^5.2.0",
     "discord.js": "^11.4.2",
     "express": "^4.16.4",
-    "nuxt": "^2.4.0"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
